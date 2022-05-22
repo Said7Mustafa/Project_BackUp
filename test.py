@@ -1,7 +1,7 @@
 import os
 
 #this is the directory that i will compare to the backup directory, it will be saved to listby
-patha = 'S:\Main Folder\Desktop\start\hight'
+patha = 'S:\Main Folder\Desktop\start\\backup'
 listby = []
 for root, dirs, files in os.walk(patha):
     levelb = root.replace(patha, '')
@@ -13,7 +13,7 @@ for root, dirs, files in os.walk(patha):
 listby = listby[1:]
 
 #this is the backup directory that will be comapred to
-pathb = 'S:\Main Folder\Desktop\start\gello'
+pathb = 'S:\Main Folder\Desktop\start\mainfile'
 listbx = []
 for root, dirs, files in os.walk(pathb):
     levelb = root.replace(pathb, '')
@@ -26,7 +26,6 @@ listbx = listbx[1:]
 
 
 print("\n\n")
-
 print(listbx)
 print()
 print(listby)
@@ -43,5 +42,4 @@ for i in listby:
             flag = True
     if flag == True:
         print(i)
-
 
