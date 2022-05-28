@@ -15,4 +15,5 @@ def get_Directory_Size(start_path):
 
     return total_size
 
-print(get_Directory_Size('S:\Main Folder\Desktop\start\gello'), 'bytes')
+print(get_Directory_Size('S:\Information Technology\Python_WorkStation\Project_BackUp\start\\backup'), 'bytes')
+
